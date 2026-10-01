@@ -271,3 +271,50 @@ footer{position:relative;display:grid;grid-template-columns:1fr auto 1fr;gap:30p
 .coach-arrow .ui-icon{width:13px;height:13px}
 
 .program-arrow{display:inline-flex;align-items:center;justify-content:center;font-style:normal}.program-arrow .ui-icon{width:14px;height:14px}.social-arrow{display:inline-flex;align-items:center;font-weight:400!important}.social-arrow .ui-icon{width:14px;height:14px}.rating-stars{display:flex!important;gap:3px;color:#f2a900;font-size:0!important;letter-spacing:0!important}.rating-stars .ui-icon{width:12px;height:12px}
+
+/* FINAL TYPOGRAPHY + MOBILE CLEANUP */
+h1,h2,.program-info b,.coach-info b,.review>strong,.review-stat>strong,.pass-stamp b,.pass-visual-caption b,.day-head b,.calendar-head b{
+  font-family:'Barlow Condensed',Inter,sans-serif;
+  font-weight:700;
+}
+h1,h2{letter-spacing:-.025em}
+.hero h1{font-weight:800;letter-spacing:-.035em}
+.program-section .section-title h2,
+.coaches-title h2,
+.schedule-copy h2,
+.review-summary h2,
+.facility-copy h2,
+.location-copy h2,
+.pass-copy h2{font-weight:700}
+.program-info b{font-size:34px;font-weight:700;letter-spacing:.005em}
+.coach-info b{font-size:36px;font-weight:700}
+.review>strong{font-size:23px;font-weight:700}
+.site-nav nav a,.nav-cta,.red-btn,.outline-btn,.insta-btn,.contact-buttons a{font-weight:700}
+.program-info small,.coach-info small{font-weight:500}
+.reel strong{font-weight:600;letter-spacing:.02em}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(64px,17vw,82px);line-height:.84}
+  .hero-copy{font-size:10px!important;line-height:1.65!important}
+  .hero-stats{gap:10px}
+  .hero-stats div b{font-size:18px}
+  .hero-stats div small{font-size:5px}
+  .program-section .section-title h2,
+  .coaches-title h2,
+  .schedule-copy h2,
+  .review-summary h2,
+  .facility-copy h2,
+  .location-copy h2{font-size:46px;line-height:.88}
+  .program-grid{grid-template-columns:1fr 1fr;gap:7px}
+  .program-card{height:250px}
+  .program-info{left:12px;right:12px;bottom:12px}
+  .program-info b{font-size:25px;line-height:.9}
+  .program-info small{font-size:6px;margin-top:5px}
+  .program-info i{width:28px;height:28px}
+  .program-arrow .ui-icon{width:12px;height:12px}
+  .community-copy h2{font-size:46px}
+  .reel strong{font-size:16px}
+  .reel small{font-size:6px}
+  .coach-info b{font-size:31px}
+  .review>strong{font-size:21px}
+  .pass-copy h2{font-size:49px}
+}
