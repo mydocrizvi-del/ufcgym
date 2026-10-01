@@ -318,3 +318,61 @@ h1,h2{letter-spacing:-.025em}
   .review>strong{font-size:21px}
   .pass-copy h2{font-size:49px}
 }
+
+
+/* PREMIUM TYPE REFINEMENT — calmer hierarchy */
+.program-section .section-title h2,
+.coaches-title h2,
+.schedule-copy h2,
+.review-summary h2,
+.facility-copy h2,
+.location-copy h2,
+.pass-copy h2,
+.community-copy h2{
+  font-weight:600;
+  letter-spacing:-.018em;
+}
+.program-info b,
+.coach-info b,
+.review>strong,
+.review-stat>strong,
+.pass-visual-caption b,
+.day-head b,
+.calendar-head b{
+  font-weight:600;
+}
+.section-title p,
+.community-copy p,
+.facility-copy p,
+.schedule-copy p,
+.location-address,
+.pass-copy p{
+  font-weight:400;
+}
+.program-info b{font-family:Inter,Arial,sans-serif;letter-spacing:-.025em}
+.coach-info b{font-family:Inter,Arial,sans-serif;letter-spacing:-.03em}
+.reel strong{font-family:Inter,Arial,sans-serif;font-weight:600}
+.arrows button{display:grid;place-items:center}
+.arrows button .ui-icon{width:14px;height:14px}
+.arrows button:first-child .ui-icon{transform:rotate(180deg)}
+
+@media(max-width:600px){
+  .program-section .section-title h2,
+  .coaches-title h2,
+  .schedule-copy h2,
+  .review-summary h2,
+  .facility-copy h2,
+  .location-copy h2,
+  .community-copy h2{font-size:44px;line-height:.92;font-weight:600}
+  .program-grid{grid-template-columns:1fr;gap:8px}
+  .program-card{height:230px}
+  .program-info{left:14px;right:14px;bottom:14px}
+  .program-info b{font-size:23px;line-height:1}
+  .program-info small{font-size:7px;line-height:1.2;margin-top:6px}
+  .program-info i{width:30px;height:30px}
+  .program-arrow .ui-icon{width:12px;height:12px}
+  .reel strong{font-size:15px;font-weight:600}
+  .coach-info b{font-size:30px}
+  .review>strong{font-size:20px}
+  .pass-copy h2{font-size:48px}
+}
