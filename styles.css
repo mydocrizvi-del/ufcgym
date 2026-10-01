@@ -555,3 +555,104 @@ h1,h2{letter-spacing:-.025em}
   .hero-footer b{font-size:7px}
   .hero-scroll{display:none!important}
 }
+
+
+/* MOBILE-FIRST HERO — production polish */
+@media(max-width:650px){
+  .hero{
+    min-height:720px;
+    height:100svh;
+    max-height:none;
+    padding:78px 16px 18px;
+    border-bottom:1px solid #252727;
+  }
+  .hero-photo{
+    background-position:64% center;
+    filter:brightness(.66) contrast(1.04) saturate(.92);
+    transform:scale(1.015);
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,#030404d9 0%,#0304049a 45%,#03040435 100%),
+      linear-gradient(0deg,#030404f2 0%,#03040455 32%,#03040450 68%,#030404a0 100%);
+  }
+  .hero-frame{
+    inset:78px 16px 18px;
+    border-color:#ffffff0d;
+  }
+  .hero-content{
+    padding:0 15px;
+  }
+  .hero-kicker{
+    font-size:7px;
+    letter-spacing:.14em;
+    gap:8px;
+  }
+  .hero-kicker-line{width:24px}
+
+  .hero-main{
+    display:block;
+    margin:0;
+    padding-top:clamp(145px,31vh,225px);
+  }
+  .hero-copy-block{max-width:none}
+  .hero-overline{
+    margin-bottom:12px;
+    font-size:6px;
+    letter-spacing:.16em;
+  }
+  .hero h1{
+    width:100%;
+    max-width:100%;
+    margin:0 0 18px;
+    font-size:clamp(53px,15.2vw,65px);
+    line-height:.86;
+    letter-spacing:-.01em;
+    white-space:normal;
+  }
+  .hero h1 span,
+  .hero h1 em{display:block;width:100%}
+  .hero-copy{
+    max-width:305px;
+    font-size:10px;
+    line-height:1.65;
+    color:#c9cbc8;
+  }
+  .hero-actions{
+    margin-top:18px;
+    gap:15px;
+    align-items:center;
+  }
+  .hero .red-btn{
+    padding:13px 14px;
+    font-size:8px;
+    gap:12px;
+    white-space:nowrap;
+  }
+  .hero-text-link{
+    font-size:6.5px;
+    letter-spacing:.09em;
+    padding-bottom:6px;
+    white-space:nowrap;
+  }
+  .hero-card{display:none}
+  .hero-footer{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding-top:10px;
+    margin:0;
+  }
+  .hero-footer span{font-size:5px;letter-spacing:.13em}
+  .hero-footer b{font-size:6.5px}
+  .hero-footer div:nth-child(2){text-align:right}
+  .hero-footer div:nth-child(3){display:none!important}
+}
+
+@media(max-width:380px){
+  .hero{padding-left:13px;padding-right:13px}
+  .hero-frame{inset-left:13px;inset-right:13px}
+  .hero-content{padding-left:12px;padding-right:12px}
+  .hero h1{font-size:51px}
+  .hero-actions{gap:11px}
+  .hero .red-btn{padding-left:12px;padding-right:12px}
+}
