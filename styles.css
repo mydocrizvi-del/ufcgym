@@ -62,3 +62,25 @@
 .program-card:hover .program-info i{background:#e50914;border-color:#e50914;color:#fff}
 @media(max-width:1100px){.program-grid{grid-template-columns:repeat(3,1fr)}.program-card{height:250px}}
 @media(max-width:650px){.program-section{padding-top:45px}.programs-title{display:grid;grid-template-columns:1fr auto}.programs-title p{grid-column:1/-1;margin-top:14px}.programs-title .arrows{grid-column:2;grid-row:1}.program-grid{grid-template-columns:repeat(2,1fr);gap:7px}.program-card{height:205px}.program-info b{font-size:20px}.program-info small{font-size:6px}}
+
+/* COMMUNITY / INSTAGRAM — mockup-locked */
+.community{position:relative;display:grid;grid-template-columns:.34fr .66fr;gap:42px;align-items:center;padding-top:68px;padding-bottom:68px;background:#080909}
+.community-copy{padding-left:max(0px,calc((100vw - 1380px)/2))}
+.community-copy h2{font-size:clamp(48px,4.5vw,72px);line-height:.83}
+.community-copy p{font-size:11px;line-height:1.75;color:#888;max-width:300px;margin:18px 0 22px}
+.insta-btn{width:max-content;display:inline-flex;align-items:center;gap:9px;background:#e50914;padding:13px 15px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;border-radius:2px;box-shadow:0 10px 30px #e509141c}
+.insta-btn:first-letter{font-size:17px}
+.insta-btn b{font-size:15px;margin-left:12px}
+.social-meta{display:flex;gap:13px;align-items:center;margin-top:38px;color:#555;font-size:7px;letter-spacing:.13em}
+.social-meta i{font-style:normal;color:#777;border-left:1px solid #333;padding-left:13px}
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;min-width:0}
+.reel{height:315px;position:relative;overflow:hidden;border:1px solid #292c2c;border-radius:3px;background:#111}
+.reel img{filter:brightness(.67) saturate(.82);transition:transform .5s,filter .5s}
+.reel:hover img{transform:scale(1.07);filter:brightness(.82) saturate(1)}
+.reel-shade{position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,#00000018 20%,#000000c9 100%)}
+.reel i{position:absolute;z-index:3;left:50%;top:44%;transform:translate(-50%,-50%);width:43px;height:43px;border:1px solid #fff;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:10px;background:#05050535;transition:.25s}
+.reel:hover i{background:#e50914;border-color:#e50914}
+.reel strong{position:absolute;z-index:3;left:13px;bottom:29px;font:800 20px/.9 'Barlow Condensed';letter-spacing:.01em}
+.reel small{position:absolute;z-index:3;left:13px;bottom:12px;font-size:7px;color:#aaa}
+@media(max-width:1000px){.community{grid-template-columns:1fr}.community-copy{padding-left:0}.reels{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:650px){.community{padding-top:48px;padding-bottom:48px}.reels{grid-template-columns:repeat(2,1fr)}.reel{height:270px}.social-meta{margin-top:25px}}
