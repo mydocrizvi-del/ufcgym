@@ -376,3 +376,38 @@ h1,h2{letter-spacing:-.025em}
   .review>strong{font-size:20px}
   .pass-copy h2{font-size:48px}
 }
+
+
+/* SHOCK SURGENT DISPLAY TYPE */
+.hero h1,
+.program-section .section-title h2,
+.about .copy h2,
+.community-copy h2,
+.facility-copy h2,
+.review-summary h2,
+.schedule-copy h2,
+.coaches-title h2,
+.pass-copy h2,
+.location-copy h2,
+.program-info b,
+.coach-info b,
+.pass-visual-caption b{
+  font-family:'Shock Surgent',Impact,sans-serif;
+  font-weight:400;
+  letter-spacing:.01em;
+}
+.hero h1{letter-spacing:.015em}
+.program-info b,.coach-info b{letter-spacing:.02em}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(58px,15.5vw,76px);line-height:.9}
+  .program-section .section-title h2,
+  .coaches-title h2,
+  .schedule-copy h2,
+  .review-summary h2,
+  .facility-copy h2,
+  .location-copy h2,
+  .community-copy h2{font-size:42px;line-height:.98}
+  .program-info b{font-size:21px;line-height:1}
+  .coach-info b{font-size:28px}
+  .pass-copy h2{font-size:46px}
+}
