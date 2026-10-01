@@ -183,3 +183,45 @@
 .calendar-foot{display:flex;justify-content:space-between;gap:15px;margin-top:10px;color:#555;font-size:5px;letter-spacing:.13em}.calendar-foot span:last-child{color:#777}
 @media(max-width:1000px){.schedule{grid-template-columns:1fr;padding-top:62px;padding-bottom:62px}.schedule-copy{padding-left:0;padding-right:0}.schedule-index{margin-bottom:25px}.calendar{padding-right:0}.days{grid-template-columns:repeat(4,minmax(145px,1fr));overflow-x:auto;padding-bottom:4px}.day{min-width:145px}}
 @media(max-width:600px){.schedule{padding:48px 20px}.schedule-copy h2{font-size:48px}.schedule-copy p{font-size:10px}.schedule-index{margin-bottom:22px}.calendar-head b{font-size:16px}.calendar-foot{display:block;line-height:2}.calendar-foot span{display:block}}
+
+/* COACHES — mockup-locked */
+.trainers{position:relative;background:#080909;padding-top:72px;padding-bottom:54px;overflow:hidden}
+.coaches-title{align-items:end;margin-bottom:27px}
+.coaches-index{font:800 9px/1 Inter,Arial,sans-serif;color:#e50914;letter-spacing:.12em;margin-bottom:25px}
+.coaches-index span{color:#555;margin-left:5px}
+.coaches-title h2{font-size:clamp(50px,4.5vw,73px);line-height:.82}
+.coaches-title p{max-width:360px;margin:0 0 1px}
+.coaches-title .outline-btn{white-space:nowrap}
+.trainer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;width:min(1380px,100%);margin:auto}
+.coach-card{height:390px;position:relative;overflow:hidden;border:1px solid #292c2c;border-radius:3px;background:#111;cursor:pointer}
+.coach-card img{filter:brightness(.56) saturate(.78);transition:transform .6s,filter .6s}
+.coach-card:hover img{transform:scale(1.055);filter:brightness(.74) saturate(.95)}
+.coach-shade{position:absolute;inset:0;background:linear-gradient(180deg,#00000018 15%,transparent 42%,#030303e8 100%);z-index:1}
+.coach-number{position:absolute;z-index:2;top:15px;left:15px;font:800 10px/1 Inter,Arial,sans-serif;color:#e50914;letter-spacing:.1em}
+.coach-info{position:absolute;z-index:2;left:17px;right:50px;bottom:18px}
+.coach-info b{display:block;font:800 39px/.8 'Barlow Condensed';letter-spacing:.01em}
+.coach-info small{display:block;margin-top:7px;color:#999;font-size:6px;letter-spacing:.13em}
+.coach-arrow{position:absolute;z-index:3;right:15px;bottom:16px;width:31px;height:31px;border:1px solid #777;border-radius:50%;display:grid;place-items:center;font-style:normal;color:#ddd;font-size:12px;transition:.25s}
+.coach-card:hover .coach-arrow{background:#e50914;border-color:#e50914}
+.coach-disclaimer{width:min(1380px,100%);margin:13px auto 0;display:flex;justify-content:space-between;gap:15px;color:#4f5351;font-size:5px;letter-spacing:.14em}
+.coach-disclaimer b{font-weight:700;color:#666}
+@media(max-width:1000px){
+ .trainers{padding-top:62px}
+ .coaches-title{grid-template-columns:1fr auto}
+ .coaches-title p{grid-column:1/-1;margin-top:13px}
+ .coaches-title .outline-btn{grid-column:2;grid-row:1}
+ .trainer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .coach-card{height:330px}
+}
+@media(max-width:650px){
+ .trainers{padding:48px 20px}
+ .coaches-index{margin-bottom:22px}
+ .coaches-title{display:block}
+ .coaches-title h2{font-size:48px}
+ .coaches-title p{margin:16px 0}
+ .trainer-grid{grid-template-columns:1fr;gap:7px}
+ .coach-card{height:320px}
+ .coach-info b{font-size:34px}
+ .coach-disclaimer{display:block;line-height:2;margin-top:10px}
+ .coach-disclaimer b{display:block}
+}
