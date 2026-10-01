@@ -266,3 +266,6 @@ footer{position:relative;display:grid;grid-template-columns:1fr auto 1fr;gap:30p
 .location-hours strong{font-size:8px;color:#c9cbc8;font-weight:600;letter-spacing:.03em}
 .contact-buttons a{font-weight:700}
 .contact-buttons a:first-child{color:#fff}
+
+.icon-only{display:inline-flex;align-items:center;justify-content:center;font-weight:400!important}.icon-only .ui-icon{width:13px;height:13px}
+.coach-arrow .ui-icon{width:13px;height:13px}
