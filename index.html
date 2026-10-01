@@ -2,106 +2,71 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050505">
-<meta name="description" content="UFC GYM Malad — MMA-inspired fitness, boxing, BJJ, strength and functional training in Malad West, Mumbai.">
+<meta name="theme-color" content="#080808"><meta name="description" content="UFC GYM Malad — Train Different.">
 <title>UFC GYM Malad — Train Different</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>:root{--bg:#070707;--surface:#101010;--surface2:#151515;--text:#f5f5f2;--muted:#9b9b97;--red:#d71920;--line:#282828;--max:1280px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;font-weight:400;letter-spacing:-.015em}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}
-.noise{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.75' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.nav{position:fixed;z-index:50;top:0;left:0;right:0;height:82px;padding:0 42px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:.3s}.nav.scrolled{background:#070707d9;backdrop-filter:blur(20px);border-color:var(--line)}
-.logo{font-size:15px;font-weight:900;letter-spacing:-.06em;display:flex;align-items:center;gap:7px}.logo span{font-size:19px}.logo i{font-style:normal;color:var(--red)}.logo small{font-size:7px;letter-spacing:.3em;color:#777;margin-left:4px}
-.nav nav{display:flex;gap:34px}.nav nav a,.nav-pass,.text-link,.follow{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.nav nav a{color:#aaa}.nav-pass{background:var(--text);color:#080808;padding:13px 18px;border-radius:2px}
-.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:140px 6vw 65px;overflow:hidden}.hero-media{position:absolute;inset:0}.hero-media img{filter:grayscale(1) brightness(.38);object-position:center}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#070707 0%,#070707a8 48%,#07070735 100%),linear-gradient(0deg,#070707 0%,transparent 48%,#07070775 100%)}#webgl{position:absolute;inset:0;z-index:1;opacity:.25}
-.hero-inner{position:relative;z-index:2;width:min(var(--max),100%);margin:auto}.eyebrow,.kicker{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#aaa}.kicker{color:var(--red)}
-h1,h2,h3{margin:0;font-family:Inter,Arial,sans-serif;font-weight:800;letter-spacing:-.07em;text-transform:none}h1{font-size:clamp(72px,11vw,154px);line-height:.82;margin-top:26px;max-width:950px}h1 b{font-weight:800;color:var(--text)}.dot{color:var(--red)}
-.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:55px;gap:40px}.hero-bottom p{max-width:400px;color:#b0b0ad;font-size:14px;line-height:1.7}.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;padding:14px 20px;background:var(--red);color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:transparent;border:1px solid #444}.text-link{color:#ddd}.text-link span{color:var(--red);margin-left:8px}.hero-meta{position:absolute;z-index:2;bottom:23px;left:6vw;right:6vw;display:flex;justify-content:space-between;color:#686865;font-size:8px;letter-spacing:.14em;text-transform:uppercase}
-.manifesto{padding:25px 0;border-block:1px solid var(--line);overflow:hidden;background:#0a0a0a}.ticker{width:max-content;display:flex;gap:22px;align-items:center;animation:marquee 30s linear infinite}.ticker span{font-size:30px;font-weight:800;letter-spacing:-.05em;white-space:nowrap;color:#777}.ticker span:nth-of-type(odd){color:#e9e9e5}.ticker em{font-style:normal;color:var(--red);font-size:20px}@keyframes marquee{to{transform:translateX(-50%)}}
-.section{padding:130px 6vw}.section-head{width:min(var(--max),100%);margin:0 auto 55px;display:flex;justify-content:space-between;align-items:end;gap:50px}.section-head h2{font-size:clamp(52px,7vw,94px);line-height:.9;margin-top:13px;max-width:700px}.section-head h2 span,.review-head h2 span,.contact h2 span,.pass h2 span{color:var(--red)}.section-head p{max-width:380px;color:#888;font-size:13px;line-height:1.8;margin:0}
-.programs{width:min(var(--max),100%);margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.program{min-height:390px;background:var(--surface);border:1px solid var(--line);padding:25px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;transition:.3s}.program:hover{background:var(--surface2);transform:translateY(-4px)}.program:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff0d;border-radius:50%;right:-80px;top:35px}.num{position:absolute;top:24px;left:25px;color:#555;font-size:10px;font-weight:700}.program-icon{height:70px;font-size:32px;color:var(--red);position:relative}.program h3{font-size:35px;line-height:.98;letter-spacing:-.055em}.program p{font-size:11px;color:#777;line-height:1.6;max-width:230px}.program a{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#aaa;margin-top:12px}
-.dark{background:#0a0a0a}.experience-grid{width:min(var(--max),100%);margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:12px}.feature-image{height:640px;position:relative;overflow:hidden}.feature-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000c,transparent 55%)}.image-caption{position:absolute;z-index:2;left:27px;bottom:27px}.image-caption span{font-size:9px;letter-spacing:.15em;color:#bbb}.image-caption strong{display:block;font-size:32px;letter-spacing:-.05em;margin-top:8px}.feature-panel{display:grid;grid-template-columns:1fr 1fr;gap:12px}.feature-stat{padding:24px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;background:#0f0f0f}.feature-stat strong{font-size:48px;letter-spacing:-.07em}.feature-stat span{font-size:9px;color:#666;text-transform:uppercase;letter-spacing:.12em}.amenities{grid-column:1/-1;border:1px solid var(--line);padding:20px;display:flex;flex-wrap:wrap;gap:7px;align-content:start}.amenities span{border:1px solid #303030;padding:9px 11px;color:#999;font-size:8px;text-transform:uppercase;letter-spacing:.1em}
-.social{background:#f1f1ee;color:#090909}.social .section-head p{color:#666}.social .kicker{color:var(--red)}.social-grid{width:min(var(--max),100%);margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.social-card,.social-cta{height:510px;position:relative;overflow:hidden}.social-card{background:#111}.social-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000b,transparent 60%)}.social-play{position:absolute;z-index:2;left:22px;top:22px;width:43px;height:43px;border:1px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:11px;color:#fff}.social-label{position:absolute;z-index:2;bottom:20px;left:20px;color:#fff}.social-label span{font-size:8px;color:#bbb;letter-spacing:.14em}.social-label strong{display:block;font-size:22px;letter-spacing:-.045em;margin-top:5px}.social-cta{background:var(--red);padding:25px;display:flex;flex-direction:column;justify-content:space-between}.social-cta span{font-size:9px;font-weight:700;letter-spacing:.12em}.social-cta strong{font-size:43px;line-height:.88;letter-spacing:-.07em}.social-cta small{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.demo-note{width:min(var(--max),100%);margin:16px auto 0;color:#777;font-size:9px;line-height:1.6}
-.reviews{background:#070707}.rating{width:min(var(--max),100%);margin:auto;padding:24px 0;border-block:1px solid var(--line);display:flex;align-items:center;gap:20px}.rating-number{font-size:55px;font-weight:800;letter-spacing:-.07em}.stars{font-size:12px;letter-spacing:.1em}.rating p{font-size:8px;color:#666;text-transform:uppercase;letter-spacing:.12em;margin:5px 0}.rating a{margin-left:auto;border:1px solid var(--line);padding:12px 15px;font-size:9px;font-weight:700;text-transform:uppercase}.review-head{width:min(var(--max),100%);margin:90px auto 35px;display:grid;grid-template-columns:1fr 1fr;gap:40px}.review-head h2{font-size:clamp(55px,7vw,92px);line-height:.88}.review-head p{max-width:390px;color:#777;font-size:12px;line-height:1.8;align-self:end}.review-cards{width:min(var(--max),100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}.review-card{min-height:170px;padding:28px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.review-card:hover{border-color:#666}.review-card strong{font-size:16px;letter-spacing:.1em}.review-card span{font-size:21px;font-weight:700;letter-spacing:-.04em}.review-card em{font-size:8px;color:#666;font-style:normal;text-transform:uppercase;letter-spacing:.12em}
-.pass{min-height:78vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}.pass-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 110%,#d7192050,transparent 45%),linear-gradient(140deg,#121212,#070707)}.pass-inner{position:relative;z-index:2}.pass h2{font-size:clamp(75px,11vw,145px);line-height:.82;letter-spacing:-.08em;margin:18px 0 28px}.pass p{color:#888;font-size:13px;margin-bottom:25px}
-.contact{padding:110px 6vw;border-top:1px solid var(--line)}.contact-inner{width:min(var(--max),100%);margin:auto}.contact h2{font-size:clamp(70px,10vw,130px);line-height:.8;letter-spacing:-.08em;margin:15px 0 60px}.contact-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.contact-grid>div{min-height:150px;padding:23px;border:1px solid var(--line)}.contact-grid small{font-size:8px;color:#555;font-weight:700;letter-spacing:.13em}.contact-grid p,.contact-grid a{display:block;color:#aaa;font-size:12px;line-height:1.7;margin:12px 0 0}.contact-grid a{margin-top:7px}
-footer{border-top:1px solid var(--line);padding:25px 6vw;display:flex;justify-content:space-between;color:#555;font-size:8px;letter-spacing:.12em;text-transform:uppercase}.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.on{opacity:1;transform:none}
-@media(max-width:900px){.nav{padding:0 20px}.nav nav{display:none}.hero{padding:125px 20px 65px}.hero-bottom{display:block}.hero-bottom .actions{margin-top:22px}.hero-meta{left:20px;right:20px}.section{padding:90px 20px}.section-head{display:block}.section-head p{margin-top:18px}.programs{grid-template-columns:1fr 1fr}.experience-grid{grid-template-columns:1fr}.feature-image{height:500px}.social-grid{grid-template-columns:1fr 1fr}.social-card,.social-cta{height:420px}.review-head{grid-template-columns:1fr}.contact{padding:90px 20px}.contact-grid{grid-template-columns:1fr}}
-@media(max-width:560px){h1{font-size:74px}.programs,.social-grid,.review-cards{grid-template-columns:1fr}.program{min-height:310px}.feature-panel{grid-template-columns:1fr 1fr}.feature-stat{min-height:130px}.feature-stat strong{font-size:39px}.social-card,.social-cta{height:460px}.rating{flex-wrap:wrap}.rating a{margin-left:0}.hero-bottom p{font-size:13px}.contact h2{margin-bottom:40px}footer{display:block;line-height:2.2}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="noise"></div>
-<header class="nav">
-  <a class="logo" href="#"><span>UFC</span> <i>GYM</i><small>MALAD</small></a>
-  <nav><a href="#training">Training</a><a href="#experience">Experience</a><a href="#social">Social</a><a href="#reviews">Reviews</a></nav>
-  <a class="nav-pass" href="#pass">Free Pass <span>↗</span></a>
+<div class="grain"></div>
+<header class="site-nav">
+<a class="brand" href="#"><b>UFC</b><strong>GYM</strong><small>MALAD</small></a>
+<nav><a href="#programs">Programs</a><a href="#facility">Facility</a><a href="#schedule">Schedule</a><a href="#community">Community</a><a href="#location">Location</a></nav>
+<a class="nav-cta" href="#pass">Book Free Pass <span>↗</span></a>
 </header>
 
 <main>
-<section class="hero">
-  <div class="hero-media"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training floor"></div>
-  <div class="hero-overlay"></div>
-  <canvas id="webgl"></canvas>
-  <div class="hero-inner">
-    <div class="eyebrow">MALAD WEST · MUMBAI · MMA-INSPIRED FITNESS</div>
-    <h1>TRAIN<br><b>DIFFERENT</b><span class="dot">.</span></h1>
-    <div class="hero-bottom">
-      <p>One club. Multiple ways to get stronger. Step into the Octagon and train with purpose.</p>
-      <div class="actions"><a class="btn" href="#pass">Book a Free Pass</a><a class="text-link" href="#training">Explore training <span>↓</span></a></div>
-    </div>
-  </div>
-  <div class="hero-meta"><span>SCROLL TO ENTER</span><span>01 / 05</span></div>
+<section class="hero section-frame">
+<div class="hero-photo"></div><div class="hero-shade"></div>
+<div class="hero-content">
+<div class="eyebrow">MALAD WEST · MUMBAI</div>
+<h1><span>TRAIN</span><em>DIFFERENT</em></h1>
+<p>World-class training. Real community.<br>Now in Malad.</p>
+<div class="hero-actions"><a class="red-btn" href="#pass">Book Your Free Pass <span>→</span></a><a class="watch" href="#facility"><i>▶</i> Watch UFC GYM</a></div>
+<div class="hero-stats"><div><b>5,000</b><small>SQ. FT. FACILITY</small></div><div><b>10+</b><small>TRAINING PROGRAMS</small></div><div><b>EXPERT</b><small>COACHES</small></div><div><b>PREMIUM</b><small>AMENITIES</small></div></div>
+</div>
 </section>
 
-<section class="manifesto"><div class="ticker"><span>TRAIN DIFFERENT</span><em>×</em><span>FIGHT FIT</span><em>×</em><span>TRAIN DIFFERENT</span><em>×</em><span>FIGHT FIT</span></div></section>
-
-<section id="training" class="section">
-  <div class="section-head reveal"><div><div class="kicker">01 / Training system</div><h2>Find your<br><span>fight.</span></h2></div><p>Signature UFC GYM classes alongside functional, traditional and combat-focused training.</p></div>
-  <div class="programs">
-    <article class="program reveal"><span class="num">01</span><div class="program-icon">🥊</div><h3>Boxing<br>Conditioning</h3><p>Footwork, combinations, cardio and power.</p><a href="#pass">Start training ↗</a></article>
-    <article class="program reveal"><span class="num">02</span><div class="program-icon">◈</div><h3>Brazilian<br>Jiu-Jitsu</h3><p>Technique, leverage, control and rolling.</p><a href="#pass">Start training ↗</a></article>
-    <article class="program reveal"><span class="num">03</span><div class="program-icon">⚡</div><h3>Fight<br>Fit</h3><p>High-intensity conditioning inspired by MMA.</p><a href="#pass">Start training ↗</a></article>
-    <article class="program reveal"><span class="num">04</span><div class="program-icon">↗</div><h3>Functional<br>Training</h3><p>Turf, strength, conditioning and movement.</p><a href="#pass">Start training ↗</a></article>
-  </div>
+<section class="split section-frame about">
+<div class="copy"><label>ABOUT US</label><h2>MORE THAN A GYM.<br><span>A COMMUNITY.</span></h2><p>UFC GYM Malad is a world-class fitness destination built for every individual — from beginners to athletes. Experience authentic training, expert coaching and a supportive community under one roof.</p>
+<ul><li>◈ <span>World-Class Equipment</span></li><li>♙ <span>Expert Coaches</span></li><li>◉ <span>Diverse Training Programs</span></li><li>◇ <span>Premium Amenities</span></li></ul><a class="red-btn" href="#facility">Explore Our Facility <span>→</span></a></div>
+<div class="about-photo"></div>
 </section>
 
-<section id="experience" class="section dark">
-  <div class="section-head reveal"><div><div class="kicker">02 / The club</div><h2>Built for<br><span>rounds.</span></h2></div><p>5,000 sq. ft. of MMA, functional and traditional training, with premium amenities and a dedicated Octagon.</p></div>
-  <div class="experience-grid">
-    <div class="feature-image reveal"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad Octagon and bags" loading="lazy"><div class="image-caption"><span>THE OCTAGON</span><strong>READY WHEN YOU ARE.</strong></div></div>
-    <div class="feature-panel reveal">
-      <div class="feature-stat"><strong>5,000</strong><span>sq. ft. facility</span></div>
-      <div class="feature-stat"><strong>MMA</strong><span>inspired training</span></div>
-      <div class="feature-stat"><strong>24/7*</strong><span>training mindset</span></div>
-      <div class="feature-stat"><strong>∞</strong><span>ways to train</span></div>
-      <div class="amenities"><span>Octagon</span><span>Boxing bags</span><span>Turf</span><span>Steam</span><span>Showers</span><span>Valet</span></div>
-    </div>
-  </div>
+<section id="programs" class="program-section section-frame">
+<div class="section-title"><div><label>OUR PROGRAMS</label><h2>TRAIN. LEARN. GROW.</h2></div><p>From combat sports to functional fitness, we offer a wide range of programs for all fitness levels.</p><div class="arrows">←　→</div></div>
+<div class="program-grid">
+<article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="MMA" loading="lazy"><div><b>MMA</b><small>Mixed Martial Arts</small><i>↗</i></div></article><article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="BOXING" loading="lazy"><div><b>BOXING</b><small>Conditioning</small><i>↗</i></div></article><article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="KICKBOXING" loading="lazy"><div><b>KICKBOXING</b><small>Conditioning</small><i>↗</i></div></article><article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="BJJ" loading="lazy"><div><b>BJJ</b><small>Brazilian Jiu-Jitsu</small><i>↗</i></div></article><article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="STRENGTH" loading="lazy"><div><b>STRENGTH</b><small>& Functional Training</small><i>↗</i></div></article><article class="program-card"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="GROUP CLASSES" loading="lazy"><div><b>GROUP CLASSES</b><small>Yoga, Zumba, TRX & More</small><i>↗</i></div></article>
+</div>
 </section>
 
-<section id="social" class="section social">
-  <div class="section-head reveal"><div><div class="kicker">03 / Social proof</div><h2>Inside the<br><span>club.</span></h2></div><a class="follow" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener">Follow @ufcgym_malad ↗</a></div>
-  <div class="social-grid">
-    <a class="social-card reveal" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad facility"><div class="social-play">▶</div><div class="social-label"><span>REELS</span><strong>Watch the latest training</strong></div></a>
-    <a class="social-card reveal alt" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://image.chitra.live/api/v1/wps/bc73c4f/0ac9237f-869f-4fa9-91d5-535f90823a02/0/NTU3OTY5MDEtMzk-620x420.jpg" alt="UFC GYM Malad facility"><div class="social-play">▶</div><div class="social-label"><span>REELS</span><strong>See the gym in motion</strong></div></a>
-    <a class="social-card reveal" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training space"><div class="social-play">▶</div><div class="social-label"><span>INSTAGRAM</span><strong>Meet the community</strong></div></a>
-    <a class="social-cta reveal" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener"><span>@ufcgym_malad</span><strong>THE FEED<br>IS LIVE.</strong><small>Open Instagram ↗</small></a>
-  </div>
-  <div class="demo-note reveal">Demo imagery is from publicly available Malad coverage. Final production should use assets supplied or approved by UFC GYM Malad.</div>
+<section id="community" class="community section-frame">
+<div class="community-copy"><label>OUR COMMUNITY</label><h2>LIFE AT<br><span>UFC GYM MALAD</span></h2><p>Real people. Real progress. Follow our journey and be a part of our fitness community.</p><a class="insta-btn" href="https://www.instagram.com/ufcgym_malad/" target="_blank">◎ &nbsp; Follow @ufcgym_malad <b>→</b></a></div>
+<div class="reels"><a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="DAILY TRAINING"><i>▶</i><strong>DAILY TRAINING</strong><small>Instagram Reel ↗</small></a><a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="FIGHT FIT"><i>▶</i><strong>FIGHT FIT</strong><small>Instagram Reel ↗</small></a><a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="OUR COMMUNITY"><i>▶</i><strong>OUR COMMUNITY</strong><small>Instagram Reel ↗</small></a><a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="FACILITY TOUR"><i>▶</i><strong>FACILITY TOUR</strong><small>Instagram Reel ↗</small></a></div>
 </section>
 
-<section id="reviews" class="section reviews">
-  <div class="rating reveal"><div class="rating-number">4.8</div><div><div class="stars">★★★★★</div><p>Public rating snapshot</p></div><a href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">View latest reviews ↗</a></div>
-  <div class="review-head reveal"><div class="kicker">04 / Member voice</div><h2>Real people.<br><span>Real rounds.</span></h2><p>We keep the review module linked to the live public listing so visitors can read the latest verified feedback rather than seeing static demo quotes.</p></div>
-  <div class="review-cards"><a class="review-card reveal" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener"><strong>★★★★★</strong><span>Read the newest public reviews</span><em>Google Maps ↗</em></a><a class="review-card reveal" href="https://magicpin.in/Mumbai/Orlem/Fitness/Ufc-Gym-Malad/store/195693b" target="_blank" rel="noopener"><strong>4.8 / 5</strong><span>Public listing rating</span><em>See listing ↗</em></a></div>
+<section id="facility" class="facility section-frame">
+<div class="facility-copy"><label>THE FACILITY</label><h2>5,000 SQ. FT.<br><span>BUILT DIFFERENT.</span></h2><p>State-of-the-art facility with an Octagon, premium equipment, turf area, lockers, showers, Wi-Fi, pro shop and more.</p><a class="red-btn" href="#location">Take a Virtual Tour <span>→</span></a></div>
+<div class="facility-gallery"><div class="main-facility"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad facility"><i>▶</i></div><div class="thumbs"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Gym detail"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Gym detail"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Gym detail"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Gym detail"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Gym detail"></div></div>
 </section>
 
-<section id="pass" class="pass"><div class="pass-bg"></div><div class="pass-inner reveal"><div class="kicker">05 / Your first round</div><h2>MAKE<br><span>YOUR MOVE.</span></h2><p>Visit UFC GYM Malad and experience the training floor for yourself.</p><div class="actions"><a class="btn" href="tel:+917506197412">Call +91 75061 97412</a><a class="btn ghost" href="https://wa.me/917506197412" target="_blank" rel="noopener">WhatsApp ↗</a></div></div></section>
+<section id="reviews" class="reviews section-frame">
+<div class="review-summary"><label>REVIEWS</label><h2>THEY TRAINED.<br><span>THEY KNOW.</span></h2><div class="rating"><b>4.8</b><span>/5</span><strong>★★★★★</strong><small>Public rating snapshot</small></div><a class="outline-btn" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank">Google Reviews <span>→</span></a></div>
+<div class="review-cards"><article class="review"><b>“</b><p>Amazing facility and professional trainers. Best gym in Malad!</p><strong>Member Review</strong><small>★★★★★</small></article><article class="review"><b>“</b><p>Great atmosphere and supportive community.</p><strong>Member Review</strong><small>★★★★★</small></article><article class="review"><b>“</b><p>World-class equipment and clean facility.</p><strong>Member Review</strong><small>★★★★★</small></article></div>
+</section>
 
-<section id="contact" class="contact"><div class="contact-inner"><div class="kicker">UFC GYM MALAD</div><h2>Malad<br><span>West.</span></h2><div class="contact-grid"><div><small>ADDRESS</small><p>6th Floor, Parth Business Plaza,<br>New Link Road, Mith Chowki,<br>Malad West, Mumbai 400064</p></div><div><small>CONTACT</small><a href="tel:+917506197412">+91 75061 97412</a><a href="mailto:malad@ufcgym.in">malad@ufcgym.in</a></div><div><small>HOURS</small><p>Check current class schedule<br>and availability with the club.</p></div></div></div></section>
+<section id="schedule" class="schedule section-frame">
+<div class="schedule-copy"><label>CLASS SCHEDULE</label><h2>FIND YOUR<br><span>NEXT CLASS</span></h2><p>A variety of classes throughout the week for all fitness levels.</p><a class="red-btn" href="#pass">View Full Schedule <span>→</span></a></div>
+<div class="calendar"><div class="filters"><b>All</b><span>MMA</span><span>Boxing</span><span>Kickboxing</span><span>BJJ</span><span>Strength</span><span>Yoga</span></div><div class="days"><div class="day"><b>MON</b><small>Oct 13</small><p>6:00 AM<br><em>Boxing Conditioning</em></p><p>7:00 AM<br><em>Strength & Functional</em></p><p>8:00 AM<br><em>Yoga</em></p></div><div class="active day"><b>TUE</b><small>Oct 14</small><p>6:00 AM<br><em>MMA Fundamentals</em></p><p>7:00 AM<br><em>Kickboxing</em></p><p>8:00 AM<br><em>Core Blast</em></p></div><div class="day"><b>WED</b><small>Oct 15</small><p>6:00 AM<br><em>BJJ</em></p><p>7:00 AM<br><em>Fight Fit</em></p><p>8:00 AM<br><em>Zumba</em></p></div><div class="day"><b>THU</b><small>Oct 16</small><p>6:00 AM<br><em>Strength</em></p><p>7:00 AM<br><em>Boxing</em></p><p>8:00 AM<br><em>TRX</em></p></div></div></div>
+</section>
+
+<section class="trainers section-frame"><div class="section-title"><div><label>OUR TEAM</label><h2>MEET OUR<br><span>EXPERT COACHES</span></h2></div><p>Train with certified and experienced coaches who are passionate about helping you reach your goals.</p><a class="outline-btn" href="#pass">View All Coaches →</a></div><div class="trainer-grid"><article><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Amit Sharma"><div><b>Amit Sharma</b><small>MMA Coach</small></div></article><article><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Neha Singh"><div><b>Neha Singh</b><small>Strength & Conditioning</small></div></article><article><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="Rohit Mehta"><div><b>Rohit Mehta</b><small>Boxing Coach</small></div></article></div></section>
+
+<section id="pass" class="pass section-frame"><div><label>GET STARTED</label><h2>BOOK YOUR<br><span>FREE PASS</span></h2><p>Experience UFC GYM Malad with a complimentary all-access pass. No commitment. Just results.</p><a class="red-btn" href="tel:+917506197412">Book Free Pass <span>→</span></a></div><div class="pass-photo"></div></section>
+
+<section id="location" class="location section-frame"><div class="location-copy"><label>FIND US</label><h2>UFC GYM MALAD</h2><p>6th Floor, Parth Business Plaza,<br>New Link Road, Malad West,<br>Mumbai, Maharashtra 400064</p><p>Mon–Sat: 5:00 AM – 12:00 AM<br>Sunday: 8:00 AM – 5:00 PM</p><div class="contact-buttons"><a href="tel:+917506197412">☎ Call Now</a><a href="https://wa.me/917506197412" target="_blank">◉ WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank">◎ Get Directions</a></div></div><div class="map"><div class="map-card">UFC GYM MALAD <span>●</span></div><div class="road r1"></div><div class="road r2"></div><div class="road r3"></div></div></section>
 </main>
-
-<footer><span>UFC GYM MALAD / CONCEPT DEMO</span><span>BUILT BY DEBUGLOPERS</span></footer>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script><script src="app.js"></script>
+<footer><b>UFC GYM <span>MALAD</span></b><nav><a href="#programs">Programs</a><a href="#facility">Facility</a><a href="#schedule">Schedule</a><a href="#community">Community</a><a href="#location">Location</a></nav><small>© 2026 UFC GYM Malad. Demo website.</small></footer>
+<script src="app.js"></script>
 </body></html>
