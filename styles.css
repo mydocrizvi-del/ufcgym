@@ -129,3 +129,41 @@
  .facility-gallery-meta{font-size:5px}
  .thumbs{height:55px;gap:4px}
 }
+
+
+/* REVIEWS — mockup-locked */
+.reviews{position:relative;display:grid;grid-template-columns:.34fr .66fr;gap:42px;align-items:center;padding-top:76px;padding-bottom:76px;background:#080909}
+.review-summary{padding-left:max(0px,calc((100vw - 1380px)/2))}
+.review-index{font:800 9px/1 Inter,Arial,sans-serif;color:#e50914;letter-spacing:.12em;margin-bottom:38px}
+.review-index span{color:#555;margin-left:5px}
+.review-summary h2{font-size:clamp(50px,4.5vw,73px);line-height:.82}
+.rating{margin:29px 0 22px;display:grid;grid-template-columns:auto auto;align-items:end;gap:0 6px}
+.rating b{font:800 65px/.82 'Barlow Condensed';letter-spacing:-.04em}
+.rating span{font-size:11px;color:#777;margin-bottom:2px}
+.rating strong{grid-column:1/-1;color:#f2a900;font-size:13px;letter-spacing:4px;margin-top:7px}
+.rating small{grid-column:1/-1;color:#666;font-size:7px;margin-top:5px}
+.review-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.review{min-height:250px;padding:19px;background:#101212;border:1px solid #292c2c;border-radius:3px;color:inherit;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;transition:transform .3s,border-color .3s,background .3s}
+.review-link:hover{transform:translateY(-5px);border-color:#555;background:#121414}
+.review-top{display:flex;align-items:center;justify-content:space-between;color:#666;font-size:7px;font-weight:800;letter-spacing:.14em}
+.review-top b{font-size:14px;color:#aaa;font-weight:500}
+.review>strong{font:800 25px/.9 'Barlow Condensed';letter-spacing:.01em;color:#fff}
+.review p{font-size:10px;line-height:1.7;color:#888;margin:0}
+.review>small{font-size:7px;color:#e50914;font-weight:800;letter-spacing:.1em}
+.review-stat{border-color:#343737}
+.review-stat .review-top b{color:#e5a400}
+.review-stat>strong{font:800 42px/.85 'Barlow Condensed';color:#fff}
+.review-stat>small{color:#666}
+@media(max-width:1000px){
+ .reviews{grid-template-columns:1fr;padding-top:62px;padding-bottom:62px}
+ .review-summary{padding-left:0}
+ .review-cards{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:650px){
+ .reviews{padding:48px 20px}
+ .review-index{margin-bottom:22px}
+ .review-summary h2{font-size:48px}
+ .review-cards{grid-template-columns:1fr}
+ .review{min-height:190px}
+ .review-stat>strong{font-size:36px}
+}
