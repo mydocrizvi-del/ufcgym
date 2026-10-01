@@ -25,3 +25,18 @@
  .hero{min-height:720px;padding:90px 20px 38px}.hero-topline{display:block}.location-tag{display:none}
  .hero h1{font-size:76px;line-height:.72;margin:15px 0 22px}.hero-side-note{right:7%;top:27%;font-size:21px}.hero-stats{gap:18px;margin-top:38px;flex-wrap:wrap}.hero-stats div{min-width:68px}.hero-stats b{font-size:13px}.hero-stats small{font-size:6px}.hero-bottom-line{left:20px;right:20px}.hero-photo{background-position:58% center}
 }
+/* ABOUT — mockup-locked */
+.about{min-height:560px;background:#080909}
+.about .copy{padding:82px 7vw 82px max(7vw,calc((100vw - 1380px)/2));justify-content:center}
+.about .copy h2{font-size:clamp(52px,4.8vw,76px);line-height:.84;letter-spacing:-.04em;margin-bottom:22px}
+.about .copy p{font-size:11px;line-height:1.75;color:#8f9290;max-width:480px;margin:0 0 14px}
+.about .copy ul{margin:7px 0 24px;gap:10px}
+.about .copy li{display:flex;align-items:center;gap:12px}
+.about .copy li b{width:22px;color:#e50914;font-size:15px;font-weight:500}
+.about .copy li span{font-size:9px;letter-spacing:.02em;color:#b9bbb8}
+.about-photo{position:relative;min-height:560px;overflow:hidden;background:url('https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg') center/cover no-repeat;filter:none}
+.about-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#05050545,transparent 45%),linear-gradient(0deg,#05050588,transparent 42%)}
+.about-photo-overlay{position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 0 22%,#00000022 48%,#00000055 100%)}
+.about-photo-label{position:absolute;z-index:2;left:30px;bottom:28px}.about-photo-label span{display:block;color:#d8d8d4;font-size:8px;letter-spacing:.17em;margin-bottom:7px}.about-photo-label b{display:block;font:800 29px/.85 'Barlow Condensed';letter-spacing:-.01em}
+@media(max-width:1000px){.about .copy{padding:65px 5vw}.about-photo{min-height:470px}}
+@media(max-width:600px){.about .copy{padding:55px 20px}.about .copy h2{font-size:48px}.about-photo{min-height:380px}.about-photo-label{left:20px;bottom:20px}.about-photo-label b{font-size:25px}}
