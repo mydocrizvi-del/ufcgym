@@ -8,12 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body><svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
+<symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m9 6 9 6-9 6V6Z" fill="currentColor"/></symbol>
+<symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10M4 10h3M17 10h3M4 14h3M17 14h3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 19c.8-3.1 3-4.8 6.5-4.8s5.7 1.7 6.5 4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="4" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="14" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 6.3L20 11l-6.3 1.7L12 19l-1.7-6.3L4 11l6.3-1.7L12 3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.2 4.5 9.5 4l2 4.3-1.8 1.7a14 14 0 0 0 4.3 4.3l1.7-1.8 4.3 2-.5 2.3c-.3 1.3-1.5 2.1-2.8 1.9C10.8 17.9 6.1 13.2 5.3 7.3c-.2-1.3.6-2.5 1.9-2.8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-message" viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H11l-5 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="m4 6 6-2 8 2 2-1v13l-6 2-8-2-2 1V6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 4v14M18 6v13" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.6-2.5-4.6 2.5.9-5.2-3.8-3.7 5.2-.8L12 4Z" fill="currentColor"/></symbol>
+</defs></svg>
 <div class="grain"></div>
 <header class="site-nav">
 <a class="brand" href="#"><b>UFC</b><strong>GYM</strong><small>MALAD</small></a>
 <nav><a href="#programs">Programs</a><a href="#facility">Facility</a><a href="#schedule">Schedule</a><a href="#community">Community</a><a href="#location">Location</a></nav>
-<a class="nav-cta" href="#pass">Book Free Pass <span>↗</span></a>
+<a class="nav-cta" href="#pass">Book Free Pass <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-up-right"></use></svg></span></a>
 </header>
 
 <main>
@@ -25,8 +39,8 @@
     <h1><span>TRAIN</span><em>DIFFERENT</em></h1>
     <p class="hero-copy">World-class training. Real community.<br>Now in Malad.</p>
     <div class="hero-actions">
-      <a class="red-btn" href="#pass">Book Your Free Pass <span>→</span></a>
-      <a class="watch" href="#facility"><i>▶</i><span>Watch UFC GYM</span></a>
+      <a class="red-btn" href="#pass">Book Your Free Pass <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
+      <a class="watch" href="#facility"><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i><span>Watch UFC GYM</span></a>
     </div>
     <div class="hero-stats">
       <div><b>5,000</b><small>SQ. FT. FACILITY</small></div>
@@ -36,7 +50,7 @@
     </div>
   </div>
   <div class="hero-side-note">MORE<br><span>THAN</span><br>A GYM</div>
-  <div class="hero-bottom-line"><span>01</span><span>SCROLL TO EXPLORE ↓</span></div>
+  <div class="hero-bottom-line"><span>01</span><span>SCROLL TO EXPLORE <svg class="ui-icon scroll-icon" aria-hidden="true"><use href="#i-arrow-down"></use></svg></span></div>
 </section>
 
 <section class="split section-frame about">
@@ -45,12 +59,12 @@
     <h2>MORE THAN A GYM.<br><span>A COMMUNITY.</span></h2>
     <p>UFC GYM Malad is a world-class fitness destination built for every individual — from beginners to athletes. Experience authentic training, expert coaching and a supportive community under one roof.</p>
     <ul>
-      <li><b>◈</b><span>World-Class Equipment</span></li>
-      <li><b>♙</b><span>Expert Coaches</span></li>
-      <li><b>◉</b><span>Diverse Training Programs</span></li>
-      <li><b>◇</b><span>Premium Amenities</span></li>
+      <li><b class="feature-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-dumbbell"></use></svg></b><span>World-Class Equipment</span></li>
+      <li><b class="feature-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-user"></use></svg></b><span>Expert Coaches</span></li>
+      <li><b class="feature-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-grid"></use></svg></b><span>Diverse Training Programs</span></li>
+      <li><b class="feature-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-spark"></use></svg></b><span>Premium Amenities</span></li>
     </ul>
-    <a class="red-btn" href="#facility">Explore Our Facility <span>→</span></a>
+    <a class="red-btn" href="#facility">Explore Our Facility <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
   </div>
   <div class="about-photo">
     <div class="about-photo-overlay"></div>
@@ -79,14 +93,14 @@
     <label>OUR COMMUNITY</label>
     <h2>LIFE AT<br><span>UFC GYM MALAD</span></h2>
     <p>Real people. Real progress. Follow our journey and be a part of our fitness community.</p>
-    <a class="insta-btn" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener">◎ <span>Follow @ufcgym_malad</span> <b>→</b></a>
+    <a class="insta-btn" href="https://www.instagram.com/ufcgym_malad/" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-instagram"></use></svg></span><span>Follow @ufcgym_malad</span> <b>→</b></a>
     <div class="social-meta"><span>INSTAGRAM</span><i>LIVE FROM MALAD</i></div>
   </div>
   <div class="reels">
-    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training"><div class="reel-shade"></div><i>▶</i><strong>DAILY TRAINING</strong><small>Instagram Reel ↗</small></a>
-    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad fight training"><div class="reel-shade"></div><i>▶</i><strong>FIGHT FIT</strong><small>Instagram Reel ↗</small></a>
-    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad community"><div class="reel-shade"></div><i>▶</i><strong>OUR COMMUNITY</strong><small>Instagram Reel ↗</small></a>
-    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad facility"><div class="reel-shade"></div><i>▶</i><strong>FACILITY TOUR</strong><small>Instagram Reel ↗</small></a>
+    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training"><div class="reel-shade"></div><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i><strong>DAILY TRAINING</strong><small>Instagram Reel ↗</small></a>
+    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad fight training"><div class="reel-shade"></div><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i><strong>FIGHT FIT</strong><small>Instagram Reel ↗</small></a>
+    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad community"><div class="reel-shade"></div><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i><strong>OUR COMMUNITY</strong><small>Instagram Reel ↗</small></a>
+    <a class="reel" href="https://www.instagram.com/ufcgym_malad/reels/" target="_blank" rel="noopener"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad facility"><div class="reel-shade"></div><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i><strong>FACILITY TOUR</strong><small>Instagram Reel ↗</small></a>
   </div>
 </section>
 
@@ -96,12 +110,12 @@
     <label>THE FACILITY</label>
     <h2>5,000 SQ. FT.<br><span>BUILT DIFFERENT.</span></h2>
     <p>State-of-the-art training space with an Octagon, premium equipment, indoor turf, lockers, showers, Wi-Fi, pro shop and everything you need to train with purpose.</p>
-    <a class="red-btn" href="#location">Explore The Facility <span>→</span></a>
+    <a class="red-btn" href="#location">Explore The Facility <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
   </div>
   <div class="facility-gallery">
     <div class="facility-main-wrap">
       <div class="facility-main-label"><span>UFC GYM MALAD</span><b>THE TRAINING FLOOR</b></div>
-      <div class="main-facility"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training facility"><div class="facility-main-shade"></div><i>▶</i></div>
+      <div class="main-facility"><img src="https://mma.prnewswire.com/media/2853667/UFC_GYM_Opening.jpg" alt="UFC GYM Malad training facility"><div class="facility-main-shade"></div><i class="media-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-play"></use></svg></i></div>
     </div>
     <div class="facility-gallery-meta"><span>FACILITY / 01</span><span>SCROLL TO EXPLORE</span></div>
     <div class="thumbs">
@@ -124,7 +138,7 @@
       <strong>★★★★★</strong>
       <small>Public rating snapshot</small>
     </div>
-    <a class="outline-btn" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">Read Public Reviews <span>→</span></a>
+    <a class="outline-btn" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">Read Public Reviews <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
   </div>
   <div class="review-cards">
     <a class="review review-link" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">
@@ -140,7 +154,7 @@
       <small>VIEW LISTING →</small>
     </a>
     <div class="review review-stat">
-      <div class="review-top"><span>UFC GYM MALAD</span><b>★</b></div>
+      <div class="review-top"><span>UFC GYM MALAD</span><b class="rating-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-star"></use></svg></b></div>
       <strong>4.8 / 5</strong>
       <p>Current public rating snapshot. Ratings can change as new reviews are posted.</p>
       <small>LIVE PUBLIC SIGNAL</small>
@@ -154,8 +168,8 @@
     <label>CLASS SCHEDULE</label>
     <h2>FIND YOUR<br><span>NEXT CLASS</span></h2>
     <p>Explore a sample weekly lineup across combat sports, conditioning and recovery. Confirm live timings with the front desk before booking.</p>
-    <div class="schedule-note"><i>●</i><span>DEMO SCHEDULE · TIMINGS SUBJECT TO CHANGE</span></div>
-    <a class="red-btn" href="#pass">Ask About Classes <span>→</span></a>
+    <div class="schedule-note"><i class="status-dot" aria-hidden="true"></i><span>DEMO SCHEDULE · TIMINGS SUBJECT TO CHANGE</span></div>
+    <a class="red-btn" href="#pass">Ask About Classes <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
   </div>
   <div class="calendar">
     <div class="calendar-head">
@@ -191,7 +205,7 @@
         <p><strong>08:00</strong><em>TRX</em></p>
       </div>
     </div>
-    <div class="calendar-foot"><span>CLASS TYPES SHOWN FOR DESIGN DEMO</span><span>CONFIRM AT UFC GYM MALAD ↗</span></div>
+    <div class="calendar-foot"><span>CLASS TYPES SHOWN FOR DESIGN DEMO</span><span>CONFIRM AT UFC GYM MALAD <svg class="ui-icon inline-icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span></div>
   </div>
 </section>
 
@@ -203,7 +217,7 @@
       <h2>MEET THE<br><span>EXPERT COACHES</span></h2>
     </div>
     <p>Dedicated coaching across combat sports, strength and conditioning. Add the official Malad coaching roster here once supplied by the gym.</p>
-    <a class="outline-btn" href="#pass">Ask About Coaching <span>→</span></a>
+    <a class="outline-btn" href="#pass">Ask About Coaching <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
   </div>
   <div class="trainer-grid">
     <article class="coach-card">
@@ -238,7 +252,7 @@
     <h2>YOUR FIRST<br><span>ROUND IS ON US.</span></h2>
     <p>Ready to train different? Book your free pass at UFC GYM Malad and experience the facility for yourself.</p>
     <div class="pass-actions">
-      <a class="red-btn" href="tel:+917506197412">Book Your Free Pass <span>→</span></a>
+      <a class="red-btn" href="tel:+917506197412">Book Your Free Pass <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-right"></use></svg></span></a>
       <a class="pass-phone" href="tel:+917506197412"><small>CALL UFC GYM MALAD</small><b>+91 75061 97412</b></a>
     </div>
     <div class="pass-meta"><span>NO ONLINE FORM</span><span>CALL TO BOOK</span><span>MALAD WEST · MUMBAI</span></div>
@@ -257,8 +271,8 @@
     <label>FIND US</label>
     <h2>UFC GYM<br><span>MALAD</span></h2>
     <p class="location-address">6th Floor, Parth Business Plaza,<br>New Link Road, Malad West,<br>Mumbai, Maharashtra 400064</p>
-    <div class="location-hours"><span>MON — SAT</span><b>5:00 AM — 12:00 AM</b><span>SUNDAY</span><b>8:00 AM — 5:00 PM</b></div>
-    <div class="contact-buttons"><a href="tel:+917506197412">☎ <span>Call Now</span></a><a href="https://wa.me/917506197412" target="_blank" rel="noopener">◉ <span>WhatsApp</span></a><a href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">◎ <span>Get Directions</span></a></div>
+    <div class="location-hours"><span>MON — SAT</span><strong>5:00 AM — 12:00 AM</b><span>SUNDAY</span><strong>8:00 AM — 5:00 PM</b></div>
+    <div class="contact-buttons"><a href="tel:+917506197412"><span class="contact-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-phone"></use></svg></span><span>Call Now</span></a><a href="https://wa.me/917506197412" target="_blank" rel="noopener"><span class="contact-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-message"></use></svg></span><span>WhatsApp</span></a><a href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener"><span class="contact-icon" aria-hidden="true"><svg class="ui-icon"><use href="#i-map"></use></svg></span><span>Get Directions</span></a></div>
     <div class="location-email">MALAD@UFCGYM.IN</div>
   </div>
   <div class="map">
@@ -266,7 +280,7 @@
     <div class="map-route route-a"></div><div class="map-route route-b"></div><div class="map-route route-c"></div>
     <div class="map-pin"><i></i><span>UFC GYM<br>MALAD</span></div>
     <div class="map-label label-a">NEW LINK ROAD</div><div class="map-label label-b">MALAD WEST</div>
-    <a class="map-open" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">OPEN IN MAPS <span>↗</span></a>
+    <a class="map-open" href="https://www.google.com/maps/search/?api=1&query=UFC+GYM+Malad" target="_blank" rel="noopener">OPEN IN MAPS <span class="icon-wrap" aria-hidden="true"><svg class="ui-icon"><use href="#i-arrow-up-right"></use></svg></span></a>
     <div class="map-coords">19°10′N / 72°50′E</div>
   </div>
 </section>
